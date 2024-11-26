@@ -1,0 +1,19 @@
+<body>
+  <%   if (posts.length > 0) { %>
+   
+      <%   posts.forEach((item) => { %>
+           <h1> <%= item.title  %> </h1>
+           <p> <%= item.description  %> </p>
+     <%   }) %>        
+   
+
+<%   } else {   %>
+
+   <h1>No Data</h1>
+      <%   } %>
+
+<form action="/composer" method="GET">
+   <input type="submit" value="Create Post">
+ </form>
+
+</body>

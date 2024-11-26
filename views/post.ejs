@@ -1,0 +1,13 @@
+<body>
+    <%   if (locals.data) { %>
+     <h1>
+        <%   data.posts.forEach((item) => { %>
+             <h1> <%= item.title  %> </h1>
+             <h1> <%= item.description  %> </h1>
+       <%   }) %>        
+     </h1>
+ 
+ <%   } else { %>
+     <h1>You Dont Have a Post Yet</h1>
+ <%   } %>
+ 
